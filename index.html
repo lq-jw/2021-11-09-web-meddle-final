@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="contain">
+        <header>
+            <div class="H_nav">
+                <div class="H_nav_btn_menu">
+                   
+                </div>
+                <div class="H_nav_btn_logo">
+                    <img src="img/H_logo.png" alt="Logo">
+                </div>
+                <div class="H_nav_btn_search">
+                    <img src="img/H_btn_search.png" alt="Search">
+                </div> 
+            </div>
+            <div id="cover" class="coverflow">
+                <a href='#'><img src="img/H_banner.png" alt="Banner" ></a>
+                <a href='#'><img src="img/H_banner_b.png" alt="Banner_b"></a>
+                <a href='#'><img src="img/H_banner_c.png" alt="Banner_c"></a>
+            </div>
+
+            <div class="sideMenu" style="display: none" id="mySidebar">
+                
+                <div class="sidetitle">
+                    <img src="img/sidetitle_img.png" class="sidetitle_img">
+                    <p class="sidetitle_p">珊瑚</p>	
+                </div>
+                <nav class="sidemenu_all">
+                    <a href="login.html"><li class="sidemenu_text">登入</li>
+                    </a>               
+                    <li class="sidemenu_text">註冊</li>
+                    <li class="sidemenu_text">我的書櫃</li>
+                    <li class="sidemenu_text">我的賣場</li>
+                    <li class="sidemenu_text">購買紀錄</li>
+                    <li class="sidemenu_text">換書紀錄</li>
+                    <li class="sidemenu_text">我的評論</li>
+                    <li class="sidemenu_text">心得交流</li>
+                    <li class="sidemenu_text">舉辦活動</li>
+                </nav>
+            </div>
+            <div class="w3-teal">
+                <button class="bar-item_op" onclick="w3_open()" id="bar-item_op">
+                    <img src="img/H_btn_menu.png">
+                </button>
+            </div>
+            <div class="w3-teal">
+                <button onclick="w3_close()" class="bar-item_cl" id="bar-item_cl">
+                    <img src="img/H_btn_menu.png">
+                </button>
+            </div>
+        </header>
+
+        <article>
+            <div class="A_contain">
+                <div class="A_imgA">
+                    <a href="sele.html">
+                    <img src="img/A_imga.png" alt="買賣區">
+                    </a>
+                </div>
+                <div class="A_imgB">
+                    <a href="change.html">
+                        <img src="img/A_imgb.png" alt="交易區">
+                    </a>                   
+                </div>                
+            </div>
+        </article>
+
+        <footer>
+            <div class="F_contain">
+                <div class="F_textA"> 
+                    <p class="F_text_a">尋者服務</p>
+                    <p class="F_text_b">找書籍</p>              
+                    <p class="F_text_b">訂單紀錄</p>
+                    <p class="F_text_b">常見問題</p>
+                    <p class="F_text_b">收藏的書籍</p>                             
+                </div>
+                <div class="F_textB">
+                    <p class="F_text_a">賣家服務</p>
+                    <p class="F_text_b">賣書籍</p>
+                    <p class="F_text_b">商場設計</p>               
+                    <p class="F_text_b">買賣條例</p>
+                    <p class="F_text_b">常見問題</p> 
+                    <p class="F_text_b">張貼商品廣告</p>                    
+                </div>
+                <div class="F_textC">
+                    <p class="F_text_a">關於我們</p>
+                    <p class="F_text_b">組織規章</p>
+                    <p class="F_text_b">合作夥伴</p>               
+                    <p class="F_text_b">得獎紀錄</p>
+                    <p class="F_text_b">工作機會</p> 
+                    <p class="F_text_b">隱私條款</p>  
+                    <p class="F_text_b">聯絡我們</p>
+                </div>
+                <div class="F_textD">
+                    <p class="F_text_a">循書</p>
+                    <p class="F_text_c">二手書籍交換買賣平台</p>
+                    <p class="F_text_d">綺麗寶寶科技股份有限公司</p>
+                    <p class="F_text_d">is@mail.ntue.edu.tw</p>
+                    <p class="F_text_d">+886 2 2732 1104</p>
+                    <p class="F_text_d">10671 臺北市大安區和平東路2段134號</p>
+                    <div class="F_btn">
+                        <div class="F_btn_fb">
+                            <a href="https://www.facebook.com/">
+                                <img src="img/F_btn_fb.png" alt="Facebook">
+                            </a>
+                        </div>
+                        <div class="F_btn_tw">
+                            <a href="https://twitter.com/?lang=zh-tw">
+                                <img src="img/F_btn_tw.png" alt="Twitter">
+                            </a>                       
+                        </div>
+                        <div class="F_btn_ig">
+                            <a href="https://www.instagram.com/">
+                                <img src="img/F_btn_ig.png" alt="Instagram">
+                            </a>                    
+                        </div>
+                    </div>
+                </div>    
+            </div>
+                
+            
+        </footer>
+    </div>
+    <script>
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("bar-item_op").style.display = "none";
+          document.getElementById("bar-item_cl").style.display = "block";
+        }
+        
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("bar-item_op").style.display = "block";
+          document.getElementById("bar-item_cl").style.display = "none";
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/">
+    <link rel="stylesheet" href="css/sele.css">
+</head>
+<body>
+    <div class="contain">
+        <header>
+            <div class="H_nav">
+                <div class="H_nav_btn_menu">
+                    
+                </div>
+                <div class="H_nav_btn_logo">
+                    <a href="index.html">
+                        <img src="img/H_logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="H_nav_btn_search">
+                    <img src="img/H_btn_search.png" alt="Search">
+                </div> 
+            </div>
+
+            <div class="sideMenu" style="display: none" id="mySidebar">
+                
+                <div class="sidetitle">
+                    <img src="img/sidetitle_img.png" class="sidetitle_img">
+                    <p class="sidetitle_p">珊瑚</p>	
+                </div>
+                <nav class="sidemenu_all">
+                    <a href="login.html"><li class="sidemenu_text">登入</li>
+                    </a>               
+                    <li class="sidemenu_text">註冊</li>
+                    <li class="sidemenu_text">我的書櫃</li>
+                    <li class="sidemenu_text">我的賣場</li>
+                    <li class="sidemenu_text">購買紀錄</li>
+                    <li class="sidemenu_text">換書紀錄</li>
+                    <li class="sidemenu_text">我的評論</li>
+                    <li class="sidemenu_text">心得交流</li>
+                    <li class="sidemenu_text">舉辦活動</li>
+                </nav>
+            </div>
+            <div class="w3-teal">
+                <button class="bar-item_op" onclick="w3_open()" id="bar-item_op">
+                    <img src="img/H_btn_menu.png">
+                </button>
+            </div>
+            <div class="w3-teal">
+                <button onclick="w3_close()" class="bar-item_cl" id="bar-item_cl">
+                    <img src="img/H_btn_menu.png">
+                </button>
+            </div>
+        </header>
+
+        <article>
+            <div class="A_contain">
+                <div class="A_nav">
+                    <div class="A_nav_left">
+                        <select class="A_nav_l_select">
+                            <option value="">類別</option>
+                            <option value="">語言學習</option>
+                            <option value="">外文書</option>
+                            <option value="">工具書</option>
+                            <option value="">雜誌</option>
+                            <option value="">旅遊</option>
+                            <option value="">人文藝術</option>
+                            <option value="">商業經濟</option>
+                            <option value="">輕小說</option>
+                            <option value="">心理勵志</option>
+                            <option value="">生活風格</option>
+                            <option value="">飲食</option>
+                        </select>
+                        <select class="A_nav_l_select">
+                            <option value="">書況</option>
+                            <option value="">類別</option>
+                            <option value="">類別</option>
+                            <option value="">類別</option>
+                            <option value="">類別</option>  
+                        </select>
+                        <select class="A_nav_l_select">
+                            <option value="">價格</option>
+                            <option value="">100元以下</option>
+                            <option value="">100元~500元</option>
+                            <option value="">500元~1000元</option>
+                            <option value="">1000元~1500元</option>
+                            <option value="">1500元~2000元</option>
+                            <option value="">2000元以上</option>
+                        </select>  
+                        <div class="A_nav_l_input">
+                            <input value="關鍵字" class="A_nav_l_i">
+                        </div>   
+                        <div class="A_nav_l_p">
+                            <p class="A_nav_l_p_textB">
+                                搜尋
+                            </p>
+                        </div>   
+                    </div>
+                    <div class="A_nav_right">
+                        <select class="A_nav_r_select">
+                            <option value="">排序</option>
+                            <option value="">由多至少</option>
+                            <option value="">由少至多</option>
+                        </select>    
+                    </div>                   
+                </div>
+                <div class="A_center">
+                    <div class="A_center_sidebar">
+                        <p class="A_sidebar_a">書籍分類</p>
+                        <p class="A_sidebar_b">類別</p>
+                        <p class="A_sidebar_b">語言學習</p>
+                        <p class="A_sidebar_b">外文書</p>
+                        <p class="A_sidebar_b">工具書</p>
+                        <p class="A_sidebar_b">雜誌</p>
+                        <p class="A_sidebar_b">旅遊</p>
+                        <p class="A_sidebar_b">人文藝術</p>
+                        <p class="A_sidebar_b">商業經濟</p>
+                        <p class="A_sidebar_b">輕小說</p>
+                        <p class="A_sidebar_b">心理勵志</p>
+                        <p class="A_sidebar_b">生活風格</p>
+                        <p class="A_sidebar_b">飲食</p>
+                    </div>
+                    <div class="A_center_main">
+                        <div class="A_center_main_goods">
+                            <div class="A_center_main_goods_img">
+                                <img src="img/A_center_main_goods_A.png" alt="goods_A">
+                            </div>
+                            <div class="A_center_main_goods_text">
+                                <p class="A_center_main_goods_texta">書名</p>
+                                <p class="A_center_main_goods_textb">書況</p>
+                                <p class="A_center_main_goods_textb">賣家名稱</p>
+                            </div>
+                        </div>
+                        <div class="A_center_main_goods">
+                            <div class="A_center_main_goods_img">
+                                <img src="img/A_center_main_goods_B.png" alt="goods_B">
+                            </div>
+                            <div class="A_center_main_goods_text">
+                                <p class="A_center_main_goods_texta">書名</p>
+                                <p class="A_center_main_goods_textb">書況</p>
+                                <p class="A_center_main_goods_textb">賣家名稱</p>
+                            </div>
+                        </div>
+                        <div class="A_center_main_goods">
+                            <div class="A_center_main_goods_img">
+                                <img src="img/A_center_main_goods_C.png" alt="goods_C">
+                            </div>
+                            <div class="A_center_main_goods_text">
+                                <p class="A_center_main_goods_texta">書名</p>
+                                <p class="A_center_main_goods_textb">書況</p>
+                                <p class="A_center_main_goods_textb">賣家名稱</p>
+                            </div>
+                        </div>
+                        <div class="A_center_main_goods">
+                            <div class="A_center_main_goods_img">
+                                <img src="img/A_center_main_goods_D.png" alt="goods_D">
+                            </div>
+                            <div class="A_center_main_goods_text">
+                                <p class="A_center_main_goods_texta">書名</p>
+                                <p class="A_center_main_goods_textb">書況</p>
+                                <p class="A_center_main_goods_textb">賣家名稱</p>
+                            </div>
+                        </div>
+                        <div class="A_center_main_goods">
+                            <div class="A_center_main_goods_img">
+                                <img src="img/A_center_main_goods_E.png" alt="goods_E">
+                            </div>
+                            <div class="A_center_main_goods_text">
+                                <p class="A_center_main_goods_texta">書名</p>
+                                <p class="A_center_main_goods_textb">書況</p>
+                                <p class="A_center_main_goods_textb">賣家名稱</p>
+                            </div>
+                        </div>
+                        <div class="A_center_main_goods">
+                            <div class="A_center_main_goods_img">
+                                <img src="img/A_center_main_goods_F.png" alt="goods_F">
+                            </div>
+                            <div class="A_center_main_goods_text">
+                                <p class="A_center_main_goods_texta">書名</p>
+                                <p class="A_center_main_goods_textb">書況</p>
+                                <p class="A_center_main_goods_textb">賣家名稱</p>
+                            </div>
+                        </div>
+                        <div class="A_center_main_goods">
+                            <div class="A_center_main_goods_img">
+                                <img src="img/A_center_main_goods_G.png" alt="goods_G">
+                            </div>
+                            <div class="A_center_main_goods_text">
+                                <p class="A_center_main_goods_texta">書名</p>
+                                <p class="A_center_main_goods_textb">書況</p>
+                                <p class="A_center_main_goods_textb">賣家名稱</p>
+                            </div>
+                        </div>
+                        <div class="A_center_main_goods">
+                            <div class="A_center_main_goods_img">
+                                <img src="img/A_center_main_goods_H.png" alt="goods_H">
+                            </div>
+                            <div class="A_center_main_goods_text">
+                                <p class="A_center_main_goods_texta">書名</p>
+                                <p class="A_center_main_goods_textb">書況</p>
+                                <p class="A_center_main_goods_textb">賣家名稱</p>
+                            </div>
+                        </div>
+                        <div class="A_center_main_goods">
+                            <div class="A_center_main_goods_img">
+                                <img src="img/A_center_main_goods_I.png" alt="goods_I">
+                            </div>
+                            <div class="A_center_main_goods_text">
+                                <p class="A_center_main_goods_texta">書名</p>
+                                <p class="A_center_main_goods_textb">書況</p>
+                                <p class="A_center_main_goods_textb">賣家名稱</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <footer>
+            <div class="F_contain">
+                <div class="F_textA"> 
+                    <p class="F_text_a">尋者服務</p>
+                    <p class="F_text_b">找書籍</p>              
+                    <p class="F_text_b">訂單紀錄</p>
+                    <p class="F_text_b">常見問題</p>
+                    <p class="F_text_b">收藏的書籍</p>                             
+                </div>
+                <div class="F_textB">
+                    <p class="F_text_a">賣家服務</p>
+                    <p class="F_text_b">賣書籍</p>
+                    <p class="F_text_b">商場設計</p>               
+                    <p class="F_text_b">買賣條例</p>
+                    <p class="F_text_b">常見問題</p> 
+                    <p class="F_text_b">張貼商品廣告</p>                    
+                </div>
+                <div class="F_textC">
+                    <p class="F_text_a">關於我們</p>
+                    <p class="F_text_b">組織規章</p>
+                    <p class="F_text_b">合作夥伴</p>               
+                    <p class="F_text_b">得獎紀錄</p>
+                    <p class="F_text_b">工作機會</p> 
+                    <p class="F_text_b">隱私條款</p>  
+                    <p class="F_text_b">聯絡我們</p>
+                </div>
+                <div class="F_textD">
+                    <p class="F_text_a">循書</p>
+                    <p class="F_text_c">二手書籍交換買賣平台</p>
+                    <p class="F_text_d">綺麗寶寶科技股份有限公司</p>
+                    <p class="F_text_d">is@mail.ntue.edu.tw</p>
+                    <p class="F_text_d">+886 2 2732 1104</p>
+                    <p class="F_text_d">10671 臺北市大安區和平東路2段134號</p>
+                    <div class="F_btn">
+                        <div class="F_btn_fb">
+                            <img src="img/F_btn_fb.png" alt="Facebook">
+                        </div>
+                        <div class="F_btn_tw">
+                            <img src="img/F_btn_tw.png" alt="Twitter">
+                        </div>
+                        <div class="F_btn_ig">
+                            <img src="img/F_btn_ig.png" alt="Instagram">
+                        </div>
+                    </div>
+                </div>    
+            </div>
+                
+            
+        </footer>
+    </div>
+
+    <script>
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("bar-item_op").style.display = "none";
+          document.getElementById("bar-item_cl").style.display = "block";
+        }
+        
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("bar-item_op").style.display = "block";
+          document.getElementById("bar-item_cl").style.display = "none";
+        }
+        </script>
+</body>
+</html>
