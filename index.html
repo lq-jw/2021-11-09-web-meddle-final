@@ -7,124 +7,201 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
     <div class="contain">
         <header>
-            <div class="H_nav">
-                <div class="H_nav_btn_menu">
-                   
-                </div>
-                <div class="H_nav_btn_logo">
-                    <img src="img/H_logo.png" alt="Logo">
-                </div>
-                <div class="H_nav_btn_search">
-                    <img src="img/H_btn_search.png" alt="Search">
-                </div> 
-            </div>
-            <div id="cover" class="coverflow">
-                <a href='#'><img src="img/H_banner.png" alt="Banner" ></a>
-                <a href='#'><img src="img/H_banner_b.png" alt="Banner_b"></a>
-                <a href='#'><img src="img/H_banner_c.png" alt="Banner_c"></a>
-            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-md-12 col-xs-12 H_nav">
+                        <div class="H_nav_btn_logo">
+                            <img src="img/H_logo.png" alt="Logo" class="img-fluid">
+                        </div>
+                        <div class="d-flex flex-row float-end H_nav_btn_r">
+                            <div class="H_nav_btn_search">
+                                <img src="img/H_search.png" alt="Search" class="img-fluid H_nav_btn_search">
+                            </div> 
+                            <div class="H_nav_btn_guest">
+                                <img src="img/H_guest.png" alt="Guest" class="img-fluid H_nav_btn_guest">
+                            </div>                             
+                        </div>
+                    </div>
+                    <div class="d-block d-sm-block d-md-none H_nav_for_xs">
+                        <div>
+                            <img src="./img/H_line.png" alt="Line" class="img-fluid">
+                        </div>
+                    </div>
+                    <div id="carouselExampleIndicators" class="col-xl-12 col-md-12 col-xs-12 carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/H_banner.png" class="d-block w-100" alt="banner">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/H_banner_b.png" class="d-block w-100" alt="banner_b">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/H_banner_c.png" class="d-block w-100" alt="banner_c">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>    
 
-            <div class="sideMenu" style="display: none" id="mySidebar">
-                
-                <div class="sidetitle">
-                    <img src="img/sidetitle_img.png" class="sidetitle_img">
-                    <p class="sidetitle_p">珊瑚</p>	
-                </div>
-                <nav class="sidemenu_all">
-                    <a href="login.html"><li class="sidemenu_text">登入</li>
-                    </a>               
-                    <li class="sidemenu_text">註冊</li>
-                    <li class="sidemenu_text">我的書櫃</li>
-                    <li class="sidemenu_text">我的賣場</li>
-                    <li class="sidemenu_text">購買紀錄</li>
-                    <li class="sidemenu_text">換書紀錄</li>
-                    <li class="sidemenu_text">我的評論</li>
-                    <li class="sidemenu_text">心得交流</li>
-                    <li class="sidemenu_text">舉辦活動</li>
-                </nav>
-            </div>
-            <div class="w3-teal">
-                <button class="bar-item_op" onclick="w3_open()" id="bar-item_op">
-                    <img src="img/H_btn_menu.png">
-                </button>
-            </div>
-            <div class="w3-teal">
-                <button onclick="w3_close()" class="bar-item_cl" id="bar-item_cl">
-                    <img src="img/H_btn_menu.png">
-                </button>
-            </div>
+                </div>    
+            </div>    
         </header>
 
         <article>
-            <div class="A_contain">
-                <div class="A_imgA">
-                    <a href="sele.html">
-                    <img src="img/A_imga.png" alt="買賣區">
-                    </a>
+            <div class="A_contain container">
+                <div class="row d-flex justify-content-between">
+                    <div class="d-none d-xl-block col-xl-6 A_imgA">
+                        <a href="sele.html">
+                        <img src="img/A_imga.png" alt="買賣區" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="d-none d-xl-block col-xl-6 A_imgB">
+                        <a href="change.html">
+                            <img src="img/A_imgb.png" alt="交易區" class="img-fluid">
+                        </a>                   
+                    </div>  
+                    <div class="d-none d-md-block col-md-6 d-xl-none A_imgA_m">
+                            <img src="img/A_imga-2.png" alt="買賣區" class="img-fluid">
+                            <p class="A_img_p">
+                                這裡是屬於你的空間，<br>
+                                在茫茫的書海中，<br>
+                                找尋那些還在外漂流的書籍，<br>
+                                他們正在等待新主人，<br>
+                                等待你的到來。<br>
+                            </p>
+                            <div class="A_img_btn">
+                                <input type="button" value="前往" onclick="location.href='sele.html'"
+                                class="A_img_btn_btn">
+                            </div>
+                    </div>
+                    <div class="d-none d-md-block col-md-6 d-xl-none A_imgB_m">
+                            <img src="img/A_imgb-2.png" alt="交易區" class="img-fluid"> 
+                            <p class="A_img_p">
+                                在這裡，<br>
+                                你會看到各種不同種類的書，<br>
+                                每本書都是大家精心挑選的，<br>
+                                找到喜歡的書，<br>
+                                並且和其他人交換吧!<br>
+                            </p>
+                            <div class="A_img_btn">
+                                <input type="button" value="前往" onclick="location.href='change.html'"
+                                class="A_img_btn_btn">
+                            </div>
+                    </div>    
+                    <div class="d-block col-sm-12 d-md-none A_imgA_space">
+                    </div>
+                    <div class="d-block col-sm-12 d-md-none A_imgA_x">
+                        <div class="A_img_x">
+                            <img src="img/A_imga-3.png" alt="買賣區" class="img-fluid">
+                        </div>
+                        
+                        <p class="A_img_p_x">
+                            這裡是屬於你的空間，<br>
+                            在茫茫的書海中，<br>
+                            找尋那些還在外漂流的書籍，<br>
+                            他們正在等待新主人，<br>
+                            等待你的到來。<br>
+                        </p>
+                        <div class="A_img_btn_x">
+                            <input type="button" value="前往" onclick="location.href='sele.html'"
+                            class="A_img_btn_btn_x">
+                        </div>
+                    </div>
+                    <div class="d-block col-sm-12 d-md-none A_imgA_space">
+                    </div>
+                    <div class="d-block col-sm-12 d-md-none A_imgB_x">
+                        <div class="A_img_x">
+                            <img src="img/A_imgb-3.png" alt="交易區" class="img-fluid"> 
+                        </div>
+                        
+                        <p class="A_img_p_x">
+                            在這裡，<br>
+                            你會看到各種不同種類的書，<br>
+                            每本書都是大家精心挑選的，<br>
+                            找到喜歡的書，<br>
+                            並且和其他人交換吧!<br>
+                        </p>
+                        <div class="A_img_btn_x">
+                            <input type="button" value="前往" onclick="location.href='change.html'"
+                            class="A_img_btn_btn_x">
+                        </div>
+                    </div>     
+                    <div class="d-block col-sm-12 d-md-none A_imgA_space">
+                    </div>          
                 </div>
-                <div class="A_imgB">
-                    <a href="change.html">
-                        <img src="img/A_imgb.png" alt="交易區">
-                    </a>                   
-                </div>                
+              
             </div>
         </article>
 
         <footer>
-            <div class="F_contain">
-                <div class="F_textA"> 
-                    <p class="F_text_a">尋者服務</p>
-                    <p class="F_text_b">找書籍</p>              
-                    <p class="F_text_b">訂單紀錄</p>
-                    <p class="F_text_b">常見問題</p>
-                    <p class="F_text_b">收藏的書籍</p>                             
-                </div>
-                <div class="F_textB">
-                    <p class="F_text_a">賣家服務</p>
-                    <p class="F_text_b">賣書籍</p>
-                    <p class="F_text_b">商場設計</p>               
-                    <p class="F_text_b">買賣條例</p>
-                    <p class="F_text_b">常見問題</p> 
-                    <p class="F_text_b">張貼商品廣告</p>                    
-                </div>
-                <div class="F_textC">
-                    <p class="F_text_a">關於我們</p>
-                    <p class="F_text_b">組織規章</p>
-                    <p class="F_text_b">合作夥伴</p>               
-                    <p class="F_text_b">得獎紀錄</p>
-                    <p class="F_text_b">工作機會</p> 
-                    <p class="F_text_b">隱私條款</p>  
-                    <p class="F_text_b">聯絡我們</p>
-                </div>
-                <div class="F_textD">
-                    <p class="F_text_a">循書</p>
-                    <p class="F_text_c">二手書籍交換買賣平台</p>
-                    <p class="F_text_d">綺麗寶寶科技股份有限公司</p>
-                    <p class="F_text_d">is@mail.ntue.edu.tw</p>
-                    <p class="F_text_d">+886 2 2732 1104</p>
-                    <p class="F_text_d">10671 臺北市大安區和平東路2段134號</p>
-                    <div class="F_btn">
-                        <div class="F_btn_fb">
-                            <a href="https://www.facebook.com/">
-                                <img src="img/F_btn_fb.png" alt="Facebook">
-                            </a>
-                        </div>
-                        <div class="F_btn_tw">
-                            <a href="https://twitter.com/?lang=zh-tw">
-                                <img src="img/F_btn_tw.png" alt="Twitter">
-                            </a>                       
-                        </div>
-                        <div class="F_btn_ig">
-                            <a href="https://www.instagram.com/">
-                                <img src="img/F_btn_ig.png" alt="Instagram">
-                            </a>                    
-                        </div>
+            <div class="container d-flex justify-content-evenly F_contain">
+                <div class="row">
+                    <div class="col-xl-3 col-md-4 col-xs-12 F_textA"> 
+                        <p class="F_text_a">尋者服務</p>
+                        <p class="F_text_b">找書籍</p>              
+                        <p class="F_text_b">訂單紀錄</p>
+                        <p class="F_text_b">常見問題</p>
+                        <p class="F_text_b">隱私條款</p>  
+                        <p class="F_text_b">收藏的書籍</p>                             
                     </div>
-                </div>    
+                    <div class="col-xl-3 col-md-4 col-xs-12 F_textB">
+                        <p class="F_text_a">賣家服務</p>
+                        <p class="F_text_b">賣書籍</p>
+                        <p class="F_text_b">商場設計</p>               
+                        <p class="F_text_b">買賣條例</p>
+                        <p class="F_text_b">常見問題</p> 
+                        <p class="F_text_b">張貼商品廣告</p>                    
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-xs-12 F_textC">
+                        <p class="F_text_a">關於我們</p>
+                        <p class="F_text_b">組織規章</p>
+                        <p class="F_text_b">合作夥伴</p>               
+                        <p class="F_text_b">得獎紀錄</p>
+                        <p class="F_text_b">工作機會</p> 
+                        <p class="F_text_b">聯絡我們</p>
+                    </div>
+                    <div class="col-xl-3 col-md-12 col-xs-12 text-center align-middle F_textD">
+                        <p class="F_text_a">循書</p>
+                        <p class="text-nowrap F_text_c">二手書籍交換買賣平台</p>
+                        <p class="text-nowrap F_text_d">綺麗寶寶科技股份有限公司</p>
+                        <p class="F_text_d">is@mail.ntue.edu.tw</p>
+                        <p class="F_text_d">+886 2 2732 1104</p>
+                        <p class="text-nowrap F_text_d">10671 臺北市大安區和平東路2段134號</p>
+                        <div class="F_btn">
+                            <div class="F_btn_fb">
+                                <a href="https://www.facebook.com/">
+                                    <img src="img/F_btn_fb.png" alt="Facebook">
+                                </a>
+                            </div>
+                            <div class="F_btn_tw">
+                                <a href="https://twitter.com/?lang=zh-tw">
+                                    <img src="img/F_btn_tw.png" alt="Twitter">
+                                </a>                       
+                            </div>
+                            <div class="F_btn_ig">
+                                <a href="https://www.instagram.com/">
+                                    <img src="img/F_btn_ig.png" alt="Instagram">
+                                </a>                    
+                            </div>
+                        </div>
+                    </div>                       
+                </div>
             </div>
                 
             
@@ -142,6 +219,8 @@
           document.getElementById("bar-item_op").style.display = "block";
           document.getElementById("bar-item_cl").style.display = "none";
         }
-        </script>
+    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
