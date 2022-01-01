@@ -3,34 +3,44 @@ body{
     padding: 0px;
 }
 .contain{
-    width: 1260px;
     margin: auto;
     font-family: 'Microsoft JhengHei', sans-serif;
 }
 
 
 /**header**/
-header{
+/* header{
     width: 1260px;
-    height: 540px;
-}
+    height: 540px; 
+     background-color: #130167; 
+}  */
 .H_nav{
-    width: 100%;
-    /* width: 1260px; */
-    height: 135px;
+
+    padding-right: 0px;
+    padding-left: 0px;
     background-color: #130167;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+.H_nav_for_xs{
+    /* margin: 0px;*/
+    background-color: #130167; 
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
 
-.H_nav_btn_logo{
-    margin-left: -800px;
-}
+
+
+
+
 .H_nav_btn_search{
-    margin-right: 50px;
-}
+    margin-right: 10px;
+} 
+.H_nav_btn_guest{
+    margin-right: 0px;
+} 
 .H_nav_btn_search:hover{
     cursor: pointer;
 }
@@ -102,14 +112,10 @@ a{
 }
 
 .coverflow{
-    width: 700px;
-    height: 490px;
     position: relative;
 }
 
 .coverflow>a{
-    width: 1260px;
-    height: 405px;
     display: block;
     position: absolute;
     top:0;
@@ -173,48 +179,121 @@ a{
 
 /**article**/
 article{
-    width: 1260px;
-    height: 505px;
     background-color: white;
 }
 .A_contain{
-    width: 1260px;
-    height: 505px;
     display: flex;
     flex-direction: row;
     justify-content: space-around; 
     align-items: center;
     z-index: 1;
+    
 }
+
 .A_imgA{
-    opacity: 0.75;
+    padding-top: 85px;
+    padding-bottom: 85px;
+    margin-left: -70px;
 }
 .A_imgB{
-    opacity: 0.75;
+    padding-top: 85px;
+    padding-bottom: 85px;
+    margin-right: -70px;
 }
 .A_imgA:hover{
     cursor: pointer;
-    opacity: 3;
 }
 .A_imgB:hover{
     cursor: pointer;
     opacity: 3;
 }
+.A_imgA_m{
+    background-color: #D9D9D9;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left:  -5%;
+}
+.A_imgB_m{
+    background-color: #D9D9D9;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-right: -5%;
+}
+.A_img_p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding-left: 30px;
+}
+.A_img_btn{
+    display: flex;
+    justify-content: end; 
+}
+.A_img_btn_btn{
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #FFF3D6;
+}
+.A_imgA_space{
+    height: 20px;
+}
 
+.A_imgA_x{
+    background-color: #D9D9D9;
+    margin-top: 50px;
+    padding-left: 0px;
+}
+.A_imgB_x{
+    background-color: #D9D9D9;
+    padding: 0px;
+    display: flex;
+    align-content: center;
+}
+.A_img_btn_x{
+    display: flex;
+    justify-content: end; 
+}
+.A_img_btn_btn_x{
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #FFF3D6;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.A_img_x{
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.A_img_p_x{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
 
 /**footer**/
-footer{
-    width: 1260px;
-    height: 320px;
+/* footer{
+    background-color: #130167;
+} */
+.F_contain{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;   */
+    /* padding: 0px 80px;  */
     background-color: #130167;
 }
-.F_contain{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; 
-    padding: 0px 80px;
-}
+
 .F_text_a{
+    margin-top: 20px;
+    margin-bottom: 10px;
     color: #F1C832;
     font-size: 24px;
     font-weight: bold;
@@ -232,6 +311,7 @@ footer{
     opacity: 0.6;
     color: #C9C9C9;
     font-size: 18px;
+    margin: 0px;
 }
 .F_text_d{
     opacity: 0.6;
@@ -242,10 +322,20 @@ footer{
 .F_btn{   
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin-top: 15px;
+    margin-bottom: 25px;
 }
-
+.F_btn_fb{
+    height: 28px;
+    width: 28px;
+}.F_btn_ig{
+    height: 28px;
+    width: 28px;
+}
 .F_btn_tw{
+    height: 28px;
+    width: 28px;
     margin: 0px 35px;
 }
 
